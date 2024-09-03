@@ -53,5 +53,12 @@ const start = ():void => {
 
 // this function will handles pause behvior of the code,
 const pause = ():void => {
+    if (isActive) {
+        setIsPaused(true);
+        setIsActive(false);
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+        }
+    }
+};
 
-}
