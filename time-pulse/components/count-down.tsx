@@ -62,3 +62,12 @@ const pause = ():void => {
     }
 };
 
+// this function will handle reset behaviour:
+const reset = ():void => {
+    setIsActive(false);
+    setIsPaused(false);
+    setTimeLeft(typeof duration === "number" ? duration : 0);
+    if (timerRef.current) {
+        clearInterval(timerRef.current);
+    }
+};
