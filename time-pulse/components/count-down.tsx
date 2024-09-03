@@ -71,3 +71,35 @@ const reset = ():void => {
         clearInterval(timerRef.current);
     }
 };
+
+
+// useEffect to start a timer that decreases time left every second when active and not paused.
+// Clears the timer on component update or unmount to prevent memory leaks.
+
+useEffect(() => {
+    if (isActive && !isPaused) {
+        timerRef.current = setInterval(() => {
+            setTimeLeft((prevTimeLeft) => {
+                if (prevTimeLeft <= 1) {
+                    clearInterval(timerRef.current!);
+                    return 0;
+                }
+                return prevTimeLeft - 1;
+            });
+        }, 1000);
+    }
+    return () => {
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+        }
+    };
+}, [isActive, isPaused]);
+
+// It calculates the minutes and seconds, 
+// then ensures they are displayed with two digits.
+const format = (time: number) : string => {
+    const minutes = Math.floor(time/60);
+    const seconds = time % 60;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+};
+
