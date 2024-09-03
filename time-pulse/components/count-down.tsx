@@ -103,3 +103,13 @@ const format = (time: number) : string => {
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 };
 
+
+// this function updates when user changes the input value.
+// it ensures the input is a number.
+
+const durationChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    setDuration(Number(e.target.value) || "");
+};
+
+
+// Structure of the UI
