@@ -16,6 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Saalgiraah Mubarak! 💗",
   description: "Crafted with love and dedication for Laiba Qazi. Using Next.js framework.! modified and personalized a bit.",
+  icons: "https://img.icons8.com/?size=100&id=8289&format=png&color=0084ff"
 };
 
 export default function RootLayout({
