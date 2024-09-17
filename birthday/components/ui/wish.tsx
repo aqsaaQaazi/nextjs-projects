@@ -91,7 +91,7 @@ export default function BirthdayWish() {
 
   return (
     // Main container with minimum height and centered content
-    <div className="min-h-screen bg-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#fef3c7] flex items-center justify-center p-4">
       {/* Animated wrapper for the card */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
@@ -100,12 +100,13 @@ export default function BirthdayWish() {
         className="w-full max-w-md"
       >
         {/* Birthday card with shadow and border */}
-        <Card className="bg-pastel-pink mx-auto overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl border-2 border-black">
+        <Card className="bg-[#d6e6eb] mx-auto overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl border-4 border-[#f7c1c8]">
           {/* Card header with birthday message */}
           <CardHeader className="text-center">
-            <CardTitle className="text-4xl font-bold text-black">Happy 18th Birthday!</CardTitle>
-            <CardDescription className="text-2xl font-semibold text-gray-600"><strong>"Tingri"</strong></CardDescription>
-            <p className="text-lg text-gray-500">18th September 2024</p>
+            <CardTitle className="text-4xl font-bold text-[]"> 🎉 Happy Birthday! 🍾</CardTitle>
+            <CardDescription className="text-2xl font-semibold text-gray-600"><strong><i>Laiba</i></strong> turned 18 🥳</CardDescription>
+            <p className="text-lg text-gray-500"> on <i>18th September 2024</i></p>
+            <h6 className='text-center text-slate-600 bg-yellow-100'>click on celebrate to light candles</h6>
           </CardHeader>
           {/* Card content with candles and balloons */}
           <CardContent className="space-y-6 text-center">
@@ -145,7 +146,7 @@ export default function BirthdayWish() {
             </div>
             {/* Balloons section */}
             <div>
-              <h3 className="text-lg font-semibold text-black mb-2">Pop the balloons:</h3>
+              <h3 className="text-lg font-semibold text-black mb-2">click to Pop za balloons:</h3>
               <div className="flex justify-center space-x-2">
                 {/* Map through balloons and render based on state */}
                 {[...Array(totalBalloons)].map((_, index) => (
@@ -169,7 +170,7 @@ export default function BirthdayWish() {
           {/* Card footer with celebrate button */}
           <CardFooter className="flex justify-center">
             <Button
-              className="button-candle hover:bg-flame-red transition-all duration-300"
+              className="button-candle bg-[#a3d9a5] hover:bg-flame-red transition-all duration-300"
               onClick={celebrate} // Trigger celebration on click
               disabled={celebrating} // Disable button once celebration starts
             >
