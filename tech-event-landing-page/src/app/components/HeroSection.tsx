@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{backgroundImage: "url('/placeholder.svg?height=1080&width=1920')"}}
+        style={{backgroundImage: "url('https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=300')"}}
       ></div>
       
       {/* Overlay for better text visibility */}
@@ -14,11 +14,12 @@ export default function HeroSection() {
       
       {/* Content */}
       <div className="relative z-20 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          TechCon 2024 - The Premier Tech Conference
+        <h1 className="text-3xl md:text-6xl font-bold mb-4 text-yellow-600">
+        DevSummit 2024 - 
         </h1>
+        <h2 className='text-5xl md:text-6xl font-bold mb-4'>The Future of Tech Starts Here</h2>
         <p className="text-xl md:text-2xl mb-8">
-          Join the world's leading developers and tech innovators
+        Engage with top developers and innovators.
         </p>
         <Link 
           href="#registration" 

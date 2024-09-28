@@ -10,11 +10,11 @@ export default function EventDetails() {
           <div className="space-y-6">
             <div className="flex items-center">
               <CalendarDays className="w-6 h-6 mr-4 text-blue-600 dark:text-blue-400" />
-              <p className="text-lg dark:text-gray-300">March 5th - 7th, 2024</p>
+              <p className="text-lg dark:text-gray-300">Starting from October 26th</p>
             </div>
             <div className="flex items-center">
               <MapPin className="w-6 h-6 mr-4 text-blue-600 dark:text-blue-400" />
-              <p className="text-lg dark:text-gray-300">Silicon Valley, CA / Virtual</p>
+              <p className="text-lg dark:text-gray-300">Cyberville, QC / Hybrid</p>
             </div>
             <div className="flex items-center">
               <Users className="w-6 h-6 mr-4 text-blue-600 dark:text-blue-400" />
@@ -24,9 +24,18 @@ export default function EventDetails() {
           
           {/* Map */}
           <div className="h-64 bg-gray-300 dark:bg-gray-700 rounded-lg overflow-hidden">
-            {/* Replace with actual Google Maps embed */}
+            {/* Fetch and replace the API */}
             <div className="w-full h-full flex items-center justify-center text-gray-500 dark:text-gray-400">
-              Google Maps Embed Placeholder
+            <iframe
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        referrerPolicy="no-referrer-when-downgrade"
+        src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Karachi,Pakistan`}
+        allowFullScreen
+        className="rounded-lg shadow-lg"
+      ></iframe>
+
             </div>
           </div>
         </div>

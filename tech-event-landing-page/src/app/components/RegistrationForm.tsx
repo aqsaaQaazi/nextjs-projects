@@ -44,10 +44,10 @@ export default function RegistrationForm() {
   }
 
   return (
-    <section id="registration" className="py-16 bg-white dark:bg-gray-800">
+    <section id="registration" className="py-16 bg-white dark:bg-gray-800 min-h-svh min-w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">Register Now</h2>
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">Reserve Your Seat Now</h2>
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 rounded-lg">
           <div className="mb-4">
             <label htmlFor="name" className="block mb-2 text-sm font-bold text-gray-700 dark:text-gray-300">Name</label>
             <input
@@ -83,11 +83,12 @@ export default function RegistrationForm() {
               onChange={handleChange}
               className="w-full px-3 py-2 text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 border rounded-lg focus:outline-none focus:border-blue-500 dark:focus:border-blue-400"
             >
-              <option value="In-Person">In-Person</option>
+              <option value="In-Person" 
+              >In-Person</option>
               <option value="Virtual">Virtual</option>
             </select>
           </div>
-          <button type="submit" className="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:shadow-outline dark:bg-blue-600 dark:hover:bg-blue-700">
+          <button type="submit" className="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:shadow-outline dark:bg-blue-600 dark:hover:bg-blue-700 active:bg-blue-500 ">
             Register
           </button>
         </form>

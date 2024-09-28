@@ -2,10 +2,18 @@ import Image from 'next/image'
 
 export default function Speakers() {
   const speakers = [
-    { name: "Jane Doe", title: "Lead Developer at Google", description: "Expert in AI and machine learning technologies." },
-    { name: "John Smith", title: "CTO of Tech Innovators", description: "Pioneering work in quantum computing." },
-    { name: "Alice Johnson", title: "Cybersecurity Specialist", description: "Leading authority on blockchain security." },
-    { name: "Bob Williams", title: "UX Research Lead at Apple", description: "Innovator in human-computer interaction." },
+    { name: "Jane Doe", title: "Lead Developer at Google", description: "Expert in AI and machine learning technologies.",
+      Image:"https://images.pexels.com/photos/27523299/pexels-photo-27523299/free-photo-of-round-glasses-complement-floral-dress.jpeg"
+     },
+    { name: "John Smith", title: "CTO of Tech Innovators", description: "Pioneering work in quantum computing.",
+      Image:"https://images.pexels.com/photos/32976/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300"
+     },
+    { name: "Alice Johnson", title: "Cybersecurity Specialist", description: "Leading authority on blockchain security." ,
+      Image:"https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=300"
+    },
+    { name: "Bob Williams", title: "UX Research Lead at Apple", description: "Innovator in human-computer interaction.",
+      Image:"https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=300"
+     },
   ]
 
   return (
@@ -17,7 +25,7 @@ export default function Speakers() {
             <div key={index} className="text-center">
               <div className="mb-4 relative mx-auto w-40 h-40 overflow-hidden rounded-full">
                 <Image 
-                  src={`/placeholder.svg?text=${speaker.name}`}
+                  src={speaker.Image}
                   alt={speaker.name}
                   layout="fill"
                   objectFit="cover"
