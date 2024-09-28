@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <div className="flex space-x-4">
             
-            <Link href="https://www.linkedin.com/in/aqsaa-qaazi-7b69982b4/?originalSubdomain=pk" className="hover:text-blue-400 transition duration-300">
+            <Link href="https://www.linkedin.com/in/aqsaa-qaazi-7b69982b4/?originalSubdomain=pk" target="_blank" className="hover:text-blue-400 transition duration-300">
               <Linkedin />
               <span className="sr-only">LinkedIn</span>
             </Link>
