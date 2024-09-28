@@ -1,30 +1,38 @@
+"use client"
+
 import Image from 'next/image'
 
 export default function Sponsors() {
   const sponsors = [
     {
     name:"Google",
-    Image:"https://pngteam.com/images/google_logo_high_resolution_hd_high_quality_transparent_2-5608x1850_e76e0ab8_transparent.png"
+    Image:"https://pngteam.com/images/google_logo_high_resolution_hd_high_quality_transparent_2-5608x1850_e76e0ab8_transparent.png",
+    href:"https://www.google.com/"
   },
   {
     name:"Microsoft",
-    Image:"https://th.bing.com/th/id/R.0808bb2dc8dcec85349c3e249e6deac2?rik=zC8YJ1RpCQ6ifA&pid=ImgRaw&r=0"
+    Image:"https://th.bing.com/th/id/R.0808bb2dc8dcec85349c3e249e6deac2?rik=zC8YJ1RpCQ6ifA&pid=ImgRaw&r=0",
+    href:"https://account.microsoft.com/account/Account"
   },
   {
     name:"AWS",
-    Image:"https://th.bing.com/th?id=OIP.ZowGmoDw7Zi452WJ30-ijgHaCm&w=350&h=123&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    Image:"https://th.bing.com/th?id=OIP.ZowGmoDw7Zi452WJ30-ijgHaCm&w=350&h=123&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    href:"https://aws.amazon.com"
   },
   {
     name:"GitHub",
-    Image:"https://th.bing.com/th?id=OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    Image:"https://th.bing.com/th?id=OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    href:"https://github.com"
   },
   {
     name:"Apple",
-    Image:"https://th.bing.com/th?id=OIP.KzOFPzLnbMPTb4zlzxi8PgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    Image:"https://th.bing.com/th?id=OIP.KzOFPzLnbMPTb4zlzxi8PgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    href:"https://www.apple.com"
   },
   {
     name:"IBM",
-    Image:"https://th.bing.com/th?id=OIP.jWE_00NLlt3IzXSnWw9cAAHaDF&w=349&h=145&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    Image:"https://th.bing.com/th?id=OIP.jWE_00NLlt3IzXSnWw9cAAHaDF&w=349&h=145&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    href:"https://www.ibm.com"
   }]
 
   return (
@@ -37,6 +45,7 @@ export default function Sponsors() {
               <Image 
                 src={sponsors.Image}
                 alt={sponsors.name}
+                onClick={() => window.open(sponsors.href, '_blank')}
                 width={150}
                 height={80}
                 className="transition duration-300 ease-in-out filter grayscale hover:grayscale-0 dark:invert"
