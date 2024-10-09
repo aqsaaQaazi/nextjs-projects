@@ -7,12 +7,12 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center bg-white py-2 px-4 w-full border-b-2">
-      {/* Logo */}
+        
       <div className="font-black text-2xl sm:text-3xl lg:text-4xl">
         SHOP.CO
       </div>
 
-      {/* Menu for larger screens */}
+      
       <nav className="hidden md:flex">
         <ul className="flex mx-3 font-light text-lg">
           <li className="mx-4 cursor-pointer">Shop</li>
@@ -22,7 +22,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      {/* Hamburger Icon for mobile */}
+      
       <div className="md:hidden">
         <button  onClick={() => setMenuOpen(!isMenuOpen)}>
           <svg
@@ -30,7 +30,7 @@ export default function Header() {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-8 h-8"
+            className="w-8 h-8 m-2 mx-4"
           >
             <path
               strokeLinecap="round"
@@ -42,7 +42,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Dropdown Menu for mobile */}
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-10 md:hidden">
           <ul className="flex flex-col items-start font-light text-lg p-4">
@@ -54,7 +53,7 @@ export default function Header() {
         </div>
       )}
 
-      {/* Search Bar */}
+      
       <div className="relative m-3 w-1/2 lg:w-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
