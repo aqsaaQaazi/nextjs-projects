@@ -7,7 +7,7 @@ export default function DarkModeToggle() {
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
-    // Check for saved theme preference or use system preference
+    
     const isDarkMode = localStorage.getItem('darkMode') === 'true' || 
       (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     setDarkMode(isDarkMode)
@@ -27,7 +27,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 transition-colors duration-200"
+      className="p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800 transition-colors duration-200"
       aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {darkMode ? <Sun size={24} /> : <Moon size={24} />}

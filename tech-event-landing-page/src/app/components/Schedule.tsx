@@ -30,7 +30,7 @@ export default function Schedule() {
           <div className="space-y-8">
             {scheduleData.map((day, index) => (
               <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-                <h3 className="text-xl font-semibold bg-blue-600 text-white p-4">{day.day}</h3>
+                <h3 className="text-xl font-semibold bg-blue-400 dark:bg-blue-600 text-white p-4">{day.day}</h3>
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                   {day.events.map((event, eventIndex) => (
                     <li key={eventIndex} className="p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition duration-150 ease-in-out">

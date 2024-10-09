@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200`}>
-        <div className="fixed top-4 right-4 z-50">
+        <div className="fixed bottom-4 right-4 z-50">
           <DarkModeToggle />
         </div>
         {children}

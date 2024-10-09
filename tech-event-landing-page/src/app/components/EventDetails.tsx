@@ -9,15 +9,15 @@ export default function EventDetails() {
           {/* Event Information */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <CalendarDays className="w-6 h-6 mr-4 text-blue-600 dark:text-blue-400" />
+              <CalendarDays className="w-6 h-6 mr-4 text-blue-400 dark:text-blue-600" />
               <p className="text-lg dark:text-gray-300">Starting from October 26th</p>
             </div>
             <div className="flex items-center">
-              <MapPin className="w-6 h-6 mr-4 text-blue-600 dark:text-blue-400" />
+              <MapPin className="w-6 h-6 mr-4 text-blue-400 dark:text-blue-600" />
               <p className="text-lg dark:text-gray-300">Cyberville, QC / Hybrid</p>
             </div>
             <div className="flex items-center">
-              <Users className="w-6 h-6 mr-4 text-blue-600 dark:text-blue-400" />
+              <Users className="w-6 h-6 mr-4 text-blue-400 dark:text-blue-600" />
               <p className="text-lg dark:text-gray-300">3000+ Attendees | 50+ Speakers | 20+ Workshops</p>
             </div>
           </div>
@@ -35,7 +35,6 @@ export default function EventDetails() {
         allowFullScreen
         className="rounded-lg shadow-lg"
       ></iframe>
-
             </div>
           </div>
         </div>

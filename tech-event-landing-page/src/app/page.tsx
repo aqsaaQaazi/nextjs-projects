@@ -5,13 +5,15 @@ import Speakers from './components/Speakers'
 import Sponsors from './components/Sponsors'
 import RegistrationForm from './components/RegistrationForm'
 import Footer from './components/Footer'
+import Navbar from './components/navbar'
 
-// Import Google Analytics script
-import Script from 'next/script'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100">
+    <main className="min-h-screen bg-['background']">
+      {/* navbar */}
+      <Navbar/>
+
       {/* Hero Section */}
       <HeroSection />
 
@@ -33,20 +35,6 @@ export default function Home() {
       {/* Footer Section */}
       <Footer />
 
-      {/* Google Analytics Script */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'GA_MEASUREMENT_ID');
-        `}
-      </Script>
     </main>
   )
 }
