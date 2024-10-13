@@ -1,9 +1,9 @@
-import Hero from "./components/heroSection";
+import Bundle from "./components/App";
 
 export default function Home() {
   return (
     <main>
-       <Hero /> 
+       <Bundle/>
 
     </main>
   );
