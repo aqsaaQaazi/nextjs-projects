@@ -1,7 +1,7 @@
 import Hero from "./heroSection";
 import Brands from "./Brands";
 import NewArrivals from "./NewArrivals";
-import ContactUs from "./Contact";
+import ContactUs from "./Footer";
 
 export default function Bundle() {
   return (
