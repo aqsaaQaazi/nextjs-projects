@@ -1,5 +1,5 @@
-import { FaLinkedinIn, FaTwitter, FaInstagram,  FaGithub } from "react-icons/fa";
-
+import { FaLinkedinIn, FaEnvelope, FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 export default function ContactUs() {
   return (
@@ -7,29 +7,27 @@ export default function ContactUs() {
     <footer>
       {/* child one  */}
       {/* newletter section */}
-
-
       <div
         className="
-          mx-4 md:mx-7 
-          z-100 
-          my-10 md:my-16 
-          py-6 px-4 md:px-8
-        bg-black  text-white 
-          rounded-2xl
-          flex flex-col 
-          lg:flex-row 
-          lg:items-center justify-between "
+       mx-4 md:mx-7 
+       z-100 
+       my-10 md:my-16 
+       py-6 px-4 md:px-8
+     bg-black  text-white 
+       rounded-2xl
+       flex flex-col 
+       lg:flex-row 
+       lg:items-center justify-between "
       >
-        <h1 
+        <h1
           className="text-left 
           w-full md:w-3/4 
           lg:w-2/4 text-xl 
           md:text-2xl 
           font-light mt-2 
-          z-10 mb-4">
-         <span 
-         className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
+          z-10 mb-4"
+        >
+          <span className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
             GET FASHION UPDATES DELIVERED TO YOUR INBOX!
           </span>
         </h1>
@@ -50,7 +48,6 @@ export default function ContactUs() {
               />
             </svg>
 
-            
             <input
               type="email"
               placeholder="Enter your email address"
@@ -64,102 +61,108 @@ export default function ContactUs() {
         </div>
       </div>
 
-      {/* main foote eg child 2 */}
-      <div 
-        className="container bg-zinc-100 text-gray-800 mx-auto 
-        px-10 grid grid-cols-1 
-        md:grid-cols-5 gap-10 py-12">
+      <div className="bg-zinc-100">
+        <div className="border-b-2 border-zinc-600 mx-3">
+          <div
+            className="container bg-zinc-100 text-gray-800 mx-auto 
+          px-10 grid grid-cols-1 
+          md:grid-cols-5 gap-10 py-12  "
+          >
+            <div className="md:col-span-2">
+              <h3 className="text-3xl font-black mb-4">SHOP.CO</h3>
+              <p className="text-gray-500 mb-4 text-left">
+                We have clothes that suit your style and which you’re proud to
+                wear. From women to men.
+              </p>
 
+              <div className="flex space-x-4 ">
+                <a
+                  href="https://pk.linkedin.com/in/aqsaa-qaazi-7b69982b4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all ">
+                    <FaLinkedinIn />
 
-        {/* Column 1: Shop Info */}
-        <div className="md:col-span-2">
-          <h3 className="text-3xl font-black mb-4">SHOP.CO</h3>
-          <p className="text-gray-500 mb-4 text-left">
-          We have clothes that suit your style and which you’re proud to wear. From women to men. 
-          </p>
-          
+                    
+                  </div>
+                </a>
 
-          <div className="flex space-x-4 ">
-            <div  
-              className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all " >
-               <FaLinkedinIn/>
-            </div  >
-            {/* ----------------- */}
-            <div 
-              className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all "
-            >
-              <FaTwitter/>
+                {/* ----------------- */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all ">
+                  <FaEnvelope />
+
+                
+
+                </div>
+
+                {/* ---------------------- */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all ">
+                  <FaGithub />
+                </div>
+              </div>
             </div>
-            {/* ----------------- */}
-            <div 
-              className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all "
-            >
-              <FaInstagram />
+
+            <div>
+              <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">
+                COMPANY
+              </h4>
+              <ul>
+                <li className="mb-2 hover:text-black  text-gray-400">
+                  <Link href="#">About</Link>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <Link href="#">Features</Link>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <Link href="#">Works</Link>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <Link href="#">Career</Link>
+                </li>
+              </ul>
             </div>
-            {/* ---------------------- */}
-            <div
-               className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all "
-            >
-              <FaGithub />
+
+            <div>
+              <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">
+                HELP
+              </h4>
+              <ul>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Customer Support</a>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Delivery Details</a>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">
+                RESOURCES
+              </h4>
+              <ul>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Free eBooks</a>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Development Tutorial</a>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">How to - Blog</a>
+                </li>
+                <li className="mb-2 hover:text-black text-gray-400">
+                  <a href="#">Youtube Playlist</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        
-        <div>
-          <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">COMPANY</h4>
-          <ul>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">About</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Features</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Works</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Career</a>
-            </li>
-          </ul>
-        </div>
-
-        
-        <div>
-          <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">HELP</h4>
-          <ul>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Customer Support</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Delivery Details</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Terms & Conditions</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-
-        
-        <div>
-          <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">RESOURCES</h4>
-          <ul>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Free eBooks</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Development Tutorial</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">How to - Blog</a>
-            </li>
-            <li className="mb-2 hover:text-gray-400">
-              <a href="#">Youtube Playlist</a>
-            </li>
-          </ul>
         </div>
       </div>
     </footer>
