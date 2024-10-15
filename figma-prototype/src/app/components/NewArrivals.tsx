@@ -100,7 +100,7 @@ export default function NewArrivals() {
         })}
         <button 
       className="
-      bg-secondary-mutedBeige text-primary-darkBrown block  
+      bg-primary-deepRed text-white block  
        font-semibold 
        mx-auto text-lg 
        my-8 px-5 py-2 

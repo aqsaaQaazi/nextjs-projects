@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 
 export default function ContactUs() {
@@ -31,11 +31,11 @@ export default function ContactUs() {
             GET FASHION UPDATES DELIVERED TO YOUR INBOX!
           </span>
         </h1>
-        
-        <div className="w-full lg:w-auto flex items-center bg-white rounded-md p-1">
+
+        <div className="w-full lg:w-auto flex items-center bg-neutral-offWhite rounded-md p-1">
           <div className="relative w-full">
             <svg
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-black dark:text-white"
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-primary-darkBrown"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -52,26 +52,27 @@ export default function ContactUs() {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="pl-10 py-3 w-full outline-none text-gray-700 rounded-md pr-0"
+              className="pl-10 py-3 w-full outline-none text-primary-darkBrown rounded-md pr-0"
             />
           </div>
 
-          <button className="bg-black transition-all text-white w-2/5 py-4 rounded-md hover:scale-105 mr-1 active:bg-zinc-800 font-semibold text-lg">
+          <button className="bg-primary-deepRed transition-all text-neutral-offWhite w-2/5 py-4 rounded-md hover:scale-105 mr-1 active:bg-hover-accent font-semibold text-lg">
             Reach Out
           </button>
         </div>
       </div>
 
-      <div className="bg-zinc-100">
-        <div className="border-b-2 border-zinc-600 mx-3">
+      <div className="bg-neutral-lightGrey">
+        <div 
+        className="border-b-2 border-secondary-mutedBeige mx-3">
           <div
-            className="container bg-zinc-100 text-gray-800 mx-auto 
+            className="container bg-neutral-lightGrey text-primary-darkBrown mx-auto 
           px-10 grid grid-cols-1 
           md:grid-cols-5 gap-10 py-12  "
           >
             <div className="md:col-span-2">
               <h3 className="text-3xl font-black mb-4">SHOP.CO</h3>
-              <p className="text-gray-500 mb-4 text-left">
+              <p className="text-text-dark mb-4 text-left">
                 We have clothes that suit your style and which you’re proud to
                 wear. From women to men.
               </p>
@@ -82,7 +83,7 @@ export default function ContactUs() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className=" flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all ">
+                  <div className=" flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-deepRed hover:text-neutral-offWhite text-primary-darkBrown border border-primary-darkBrown cursor-pointer active:bg-hover-accent transition-all ">
                     <FaLinkedinIn />
 
                     
@@ -90,22 +91,48 @@ export default function ContactUs() {
                 </a>
 
                 {/* ----------------- */}
-                <div className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all ">
-                  <FaEnvelope />
 
-                
+                <a 
+                href="mailto:aqsaakqaazi@gmail.com" 
+                target="_blank" 
+                rel="noreferrer noopener">
+                    <div className=" flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-deepRed hover:text-neutral-offWhite text-primary-darkBrown border border-primary-darkBrown cursor-pointer active:bg-hover-accent transition-all ">
+                      <FaEnvelope />
 
-                </div>
+                    
+
+                    </div>
+                </a>
 
                 {/* ---------------------- */}
-                <div className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black hover:text-white text-black border border-black cursor-pointer active:bg-zinc-700 transition-all ">
+
+                <a 
+                href="https://github.com/aqsaaQaazi" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <div className=" flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-deepRed hover:text-neutral-offWhite text-primary-darkBrown border border-primary-darkBrown cursor-pointer active:bg-hover-accent transition-all ">
                   <FaGithub />
+                  </div>
+                </a>
+
+                {/* ------------------------ */}
+
+              <a 
+              href="wa.link/jw9r22" 
+              target="_blank" 
+              rel="noopener norefferer ">
+                <div 
+                className=" flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-deepRed hover:text-neutral-offWhite text-primary-darkBrown border border-primary-darkBrown cursor-pointer active:bg-hover-accent transition-all ">
+                    <FaWhatsapp />
+
+                    
                 </div>
-              </div>
+              </a>
             </div>
+          </div>
 
             <div>
-              <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">
+              <h4 className="text-xl tracking-wider font-medium gap-1 text-primary-darkBrown mb-4">
                 COMPANY
               </h4>
               <ul>
@@ -125,7 +152,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">
+              <h4 className="text-xl tracking-wider font-medium gap-1 text-primary-darkBrown mb-4">
                 HELP
               </h4>
               <ul>
@@ -145,7 +172,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <h4 className="text-xl tracking-wider font-medium gap-1 text-black mb-4">
+              <h4 className="text-xl tracking-wider font-medium gap-1 text-primary-darkBrown mb-4">
                 RESOURCES
               </h4>
               <ul>
