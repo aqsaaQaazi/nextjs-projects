@@ -13,7 +13,7 @@ export default function ContactUs() {
        z-100 
        my-10 md:my-16 
        py-6 px-4 md:px-8
-     bg-black  text-white 
+     bg-primary-darkBrown text-neutral-offWhite
        rounded-2xl
        flex flex-col 
        lg:flex-row 
@@ -31,6 +31,7 @@ export default function ContactUs() {
             GET FASHION UPDATES DELIVERED TO YOUR INBOX!
           </span>
         </h1>
+        
         <div className="w-full lg:w-auto flex items-center bg-white rounded-md p-1">
           <div className="relative w-full">
             <svg

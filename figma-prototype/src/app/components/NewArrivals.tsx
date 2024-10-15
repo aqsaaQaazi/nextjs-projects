@@ -54,8 +54,8 @@ export default function NewArrivals() {
   ];
 
   return (
-    <div className="w-full h-full border-b-2 ">
-      <h1 className="text-4xl font-black text-center py-2 px-8">
+    <div className="w-full h-full border-b-2 border-secondary-mutedBeige">
+      <h1 className="text-4xl font-black text-center py-2 px-8 text-primary-darkBrown">
         NEW IN STOCK
       </h1>
 
@@ -64,7 +64,7 @@ export default function NewArrivals() {
           const rating = product.Rating;
 
           return (
-            <div key={index} className="bg-white shadow-md rounded-lg hover:scale-105 transition-all">
+            <div key={index} className="bg-secondary-softSand shadow-md rounded-lg hover:scale-105 transition-all">
               <Image
                 width={500}
                 height={500}
@@ -73,21 +73,21 @@ export default function NewArrivals() {
                 className="w-full object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-bold mb-1">{product.name}</h3>
+                <h3 className="text-lg font-bold mb-1 text-primary-darkBrown">{product.name}</h3>
                 <div className="flex items-center gap-1 mt-1">
                   {[...Array(5)].map((_, index) => (
                     <FaStar
                       key={index}
                       className={`w-3 h-3 ${
-                        index < rating ? "text-yellow-400" : "text-gray-200"
+                        index < rating ? "text-yellow-400" : "text-neutral-lightGrey"
                       }`}
                     />
                   ))}{" "}
-                  <span className="text-black text-xs ml-1">
+                  <span className="text-primary-darkBrown text-xs ml-1">
                     {product.Rating}
                   </span>
                 </div>
-                <p className="text-black font-semibold text-lg ">
+                <p className="text-primary-darkBrown font-semibold text-lg ">
                   {product.price}
                 </p>
                 
@@ -100,14 +100,14 @@ export default function NewArrivals() {
         })}
         <button 
       className="
-      bg-white block text-black 
+      bg-secondary-mutedBeige text-primary-darkBrown block  
        font-semibold 
        mx-auto text-lg 
        my-8 px-5 py-2 
        rounded-md 
-       hover:bg-gray-200 
-       border-2 border-gray-600
-        active:bg-gray-100 ">
+       hover:bg-hover-buttonBg 
+       border-2 border-primary-darkBrown
+       active:bg-secondary-softSand transition-colors duration-200">
         More Items
       </button>
       </div>
