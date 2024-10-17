@@ -55,7 +55,7 @@ export default function NewArrivals() {
 
   return (
     <div className="w-full h-full border-b-2 border-secondary-mutedBeige">
-      <h1 className="text-4xl font-black text-center py-2 px-8 text-primary-darkBrown">
+      <h1 className="text-6xl font-black text-center py-2 px-8 text-primary-darkBrown">
         NEW IN STOCK
       </h1>
 
@@ -64,7 +64,7 @@ export default function NewArrivals() {
           const rating = product.Rating;
 
           return (
-            <div key={index} className="bg-secondary-softSand shadow-md rounded-lg hover:scale-105 transition-all">
+            <div key={index} className="bg-secondary-softSand shadow-sm rounded-lg hover:scale-105 duration-300 hover:shadow-hover-buttonBg hover:shadow-xl shado transition-all">
               <Image
                 width={500}
                 height={500}

@@ -2,7 +2,7 @@ import Bundle from "./components/App";
 
 export default function Home() {
   return (
-    <main>
+    <main >
        <Bundle/>
 
     </main>

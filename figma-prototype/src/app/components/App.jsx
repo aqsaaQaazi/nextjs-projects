@@ -5,7 +5,7 @@ import ContactUs from "./Footer";
 
 export default function Bundle() {
   return (
-    <main>
+    <main className="bg-secondary-softSand">
        <Hero /> 
        <Brands/>
        <NewArrivals/>

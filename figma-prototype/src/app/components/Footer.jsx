@@ -9,23 +9,25 @@ export default function ContactUs() {
       {/* newletter section */}
       <div
         className="
-       mx-4 md:mx-7 
-       z-100 
-       my-10 md:my-16 
-       py-6 px-4 md:px-8
-     bg-primary-darkBrown text-neutral-offWhite
-       rounded-2xl
-       flex flex-col 
-       lg:flex-row 
-       lg:items-center justify-between "
+        mx-4 md:mx-7  
+         z-10  // Ensure this is on top
+          relative
+          mt-5 md:mt-5
+          py-6 px-4 md:px-8
+          bg-primary-darkBrown text-neutral-offWhite
+          rounded-2xl
+          flex flex-col 
+          lg:flex-row 
+          lg:items-center justify-between
+          -mb-24"
       >
         <h1
           className="text-left 
-          w-full md:w-3/4 
+          w-3/4 md:w-2/4 
           lg:w-2/4 text-xl 
           md:text-2xl 
           font-light mt-2 
-          z-10 mb-4"
+          mb-4"
         >
           <span className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
             GET FASHION UPDATES DELIVERED TO YOUR INBOX!
@@ -33,7 +35,7 @@ export default function ContactUs() {
         </h1>
 
         <div className="w-full lg:w-auto flex items-center bg-neutral-offWhite rounded-md p-1">
-          <div className="relative w-full">
+          <div className="relative w-full ">
             <svg
               className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-primary-darkBrown"
               aria-hidden="true"
@@ -52,17 +54,17 @@ export default function ContactUs() {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="pl-10 py-3 w-full outline-none text-primary-darkBrown rounded-md pr-0"
+              className="pl-10 py-3 w-full outline-none text-neutral-l  rounded-md bg-neutral-offWhite pr-0"
             />
           </div>
 
-          <button className="bg-primary-deepRed transition-all text-neutral-offWhite w-2/5 py-4 rounded-md hover:scale-105 mr-1 active:bg-hover-accent font-semibold text-lg">
+          <button className="bg-primary-deepRed transition-all text-neutral-offWhite w-2/6 py-4 rounded-md hover:scale-105 mr-1 active:bg-hover-accent font-semibold text-lg md:px-6">
             Reach Out
           </button>
         </div>
       </div>
 
-      <div className="bg-neutral-lightGrey">
+      <div      className="bg-neutral-lightGrey  pt-32">
         <div 
         className="border-b-2 border-secondary-mutedBeige mx-3">
           <div

@@ -6,8 +6,8 @@ export default function Brands() {
   const Zara = "/zara.png";
   const CK = "/calvin-klein.png";
   return (
-    <section className="bg-black  flex flex-wrap justify-center text-white w-full  py-8 my-3">
-      <div className="flex justify-center items-center w-1/3 sm:w-1/4 lg:w-auto mx-3 mb-4">
+    <section className="bg-gradient-to-bl from-[#AC9C8D] to-[#73283D] flex flex-wrap justify-center text-white w-full  py-8 my-3">
+      <div className="flex justify-evenly items-center w-1/3 sm:w-1/4 lg:w-auto mx-3 mb-4">
         <img src={Gucci} alt="Gucci brand logo" height="36" width="156" />
       </div>
 
