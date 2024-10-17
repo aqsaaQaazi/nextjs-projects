@@ -54,7 +54,7 @@ export default function ContactUs() {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="pl-10 py-3 w-full outline-none text-neutral-l  rounded-md bg-neutral-offWhite pr-0 sm:placeholder-primary-darkBrown"
+              className="pl-10 py-3 w-full outline-none text-primary-darkBrown  rounded-md bg-neutral-offWhite pr-0"
             />
           </div>
 
