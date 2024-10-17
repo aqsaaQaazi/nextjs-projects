@@ -6,7 +6,7 @@ export default function Hero() {
     className="w-full h-screen bg-cover bg-left sm:bg-right-center bg-no-repeat  flex flex-col justify-center"
 
       style={{
-        backgroundImage: `url('/hero.png')`,
+        backgroundImage: `url('/hero.jpg')`,
 
         backgroundPosition: "right center",
 
