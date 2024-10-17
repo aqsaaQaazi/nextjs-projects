@@ -64,7 +64,7 @@ export default function NewArrivals() {
           const rating = product.Rating;
 
           return (
-            <div key={index} className="bg-secondary-softSand shadow-sm rounded-lg hover:scale-105 duration-300 hover:shadow-hover-buttonBg hover:shadow-xl shado transition-all">
+            <div key={index} className="bg-secondary-softSand shadow-sm rounded-lg hover:scale-105 duration-300 hover:shadow-hover-buttonBg hover:shadow-xl px-3 py-3  transition-all">
               <Image
                 width={500}
                 height={500}
